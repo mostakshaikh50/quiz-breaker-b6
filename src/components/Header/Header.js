@@ -11,7 +11,7 @@ const Header = () => {
                 <NavLink to='/stat'>Statistics</NavLink>
                 <NavLink to='/blog'>Blog</NavLink>
             </nav>
-            <p>This is common header!!</p>
+            
         </div>
     );
 };

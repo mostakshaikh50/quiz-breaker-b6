@@ -33,7 +33,7 @@ const QuizOptions = ({ item, topic }) => {
             <Row xs={1} md={4} className="g-4">
                 {options.map((quiz, id) => (
                     <Col>
-                        <Card style={{ width: '18rem', marginLeft: '40px', marginBottom:'40px' }}>
+                        <Card style={{ width: '18rem', height:'200px', marginLeft: '40px', marginBottom:'40px' }}>
                             
                             <Card.Body>                                
                                 <Card.Text>

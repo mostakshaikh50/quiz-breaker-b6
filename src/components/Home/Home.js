@@ -39,14 +39,13 @@ const Home = () => {
                 text-decoration: none;
             }
             `}
-      </style>
-
-           <div>
-             <MainHead></MainHead>
-           </div>
+      </style>        
+             
+           
 
 
             <div className='topic'>
+            <MainHead></MainHead>
             <Row xs={1} md={4} className="g-4" style={{ marginTop: '20px' }}>
                 {allQuiz.map((quiz, idx) => (
                     <Col>
