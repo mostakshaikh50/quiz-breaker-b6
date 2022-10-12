@@ -6,6 +6,7 @@ import Main from './layout/Main'
 import NotFound from './components/NotFound/NotFound';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import Blog from './components/Blog/Blog';
+import Statistics from './components/Statistics/Statistics';
 
 
 function App() {
@@ -31,30 +32,15 @@ function App() {
           {
             path: '/blog',
             element: <Blog></Blog>
-          }
+          },
 
-
-          // { 
-          //   path: '/friends',
-          //   loader: async () => {
-          //       return fetch('https://jsonplaceholder.typicode.com/users');
-          //   } ,
-          //   element: <Friends></Friends> },
-            // {
-            //   path: '/friend/:friendId',
-            //   loader: async ({params}) =>{
-                  
-            //       return fetch(`https://jsonplaceholder.typicode.com/users/${params.friendId}`)
-            //   },
-            //   element: <FriendDetails></FriendDetails>
-            // },
-            // {
-            //   path: 'quiz',
-            //   element: <Posts></Posts>,
-            //   loader: async() =>{
-            //     return fetch(`https://jsonplaceholder.typicode.com/posts`)
-            //   }
-            // }           
+          {
+            path:'stat',
+            loader: async () => {
+                     return fetch('https://openapi.programming-hero.com/api/quiz');
+                 } ,
+            element: <Statistics></Statistics>
+          }                
            
         ] 
       },

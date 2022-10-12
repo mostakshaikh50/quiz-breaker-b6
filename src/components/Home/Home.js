@@ -5,15 +5,15 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Button } from 'react-bootstrap';
+import Statistics from '../Statistics/Statistics';
 
 
 const Home = () => {
-    // const quizData = useLoaderData();    
-    //const allQuiz = quizData.data;
+    
       
     const quizData = useLoaderData();
     const allQuiz = quizData.data;
-    console.log(quizData);
+    //console.log(quizData);
       
     return (
         
