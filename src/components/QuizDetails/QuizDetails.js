@@ -10,7 +10,7 @@ const QuizDetails = () => {
     //console.log(item);
     return (
         <div>
-            <h3>The Topic is :<span>{topic.name}</span></h3>
+            <h3>The Topic is : <span style={{ color: 'green' }}>{topic.name}</span></h3>
              
             {
              loadData.map(item => <QuizOptions

@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Button } from 'react-bootstrap';
-import Statistics from '../Statistics/Statistics';
+
 
 
 const Home = () => {
@@ -40,18 +40,18 @@ const Home = () => {
       </style>
 
 
-            <div>
-            <Row xs={1} md={2} className="g-4">
+            <div className='topic'>
+            <Row xs={1} md={4} className="g-4">
                 {allQuiz.map((quiz, idx) => (
                     <Col>
-                        <Card>
+                        <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={quiz.logo} />
                             <Card.Body>
-                                <Card.Title>{quiz.name}</Card.Title>
+                                <Card.Title style={{ color: 'green' }}>{quiz.name}</Card.Title>
                                 <Card.Text>
                                     Total Question: {quiz.total}
                                 </Card.Text>
-                                <Button  className='btn-link text-white' variant="info" size="xxl"><Link to={`/quiz/${quiz.id}`}>Go to Quiz</Link></Button>
+                                <Button  className='btn-link text-white' variant="info" size="sm"><Link to={`/quiz/${quiz.id}`}>Go to Quiz</Link></Button>
                             </Card.Body>
                         </Card>
                     </Col>

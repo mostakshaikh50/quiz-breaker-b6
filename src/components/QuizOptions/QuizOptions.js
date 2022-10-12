@@ -28,12 +28,12 @@ const QuizOptions = ({ item, topic }) => {
 
     return (
         <div>
-            <p>Question: {question}</p>
+            <p style={{ fontWeight: '700' }}>Question: <span>{question}</span> </p>
 
-            <Row xs={1} md={2} className="g-4">
+            <Row xs={1} md={4} className="g-4">
                 {options.map((quiz, id) => (
                     <Col>
-                        <Card>
+                        <Card style={{ width: '18rem', marginLeft: '40px', marginBottom:'40px' }}>
                             
                             <Card.Body>                                
                                 <Card.Text>
