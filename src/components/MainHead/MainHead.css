@@ -1,0 +1,16 @@
+.bg {
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
+    height: 30vh;
+    width: 100vh;
+    margin-left: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .p-text{
+    font-weight: 700;
+    font-size: xx-large;
+    margin-top: 20px;
+    color: rgb(9, 19, 5);
+  }
